@@ -138,6 +138,7 @@
 
   #rmlink {
     text-decoration: underline;
+      color: white;
   }
 
   #rmlink:visited {
