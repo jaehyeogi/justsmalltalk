@@ -363,6 +363,16 @@
       grid-column: 1 / 2;
       grid-row: 9 / 10;
     }
+      nav > ul > li::after {
+    padding-right: 0.5rem; 
+    content: ""
+  }
+
+  nav > ul > li:last-child::after {
+    padding-right: 0rem; 
+    content: "";
+  }
+      
   }
 
   /*
