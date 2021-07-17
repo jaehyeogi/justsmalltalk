@@ -271,6 +271,10 @@
      ##Screen=481px에서 767px 사이
      */
   @media (min-width: 570px) and (max-width: 767px) {
+          .profile{
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .mainbox {
       margin: 0 10%;
     }
@@ -285,6 +289,10 @@
      ##Screen=320px에서 479px 사이
      */
   @media (min-width: 200px) and (max-width: 570px) {
+          .profile{
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .mainbox {
       margin: 0 5%;
     }
