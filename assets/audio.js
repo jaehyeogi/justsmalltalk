@@ -1,4 +1,4 @@
- var source = "./assets/audio/justsmalltalk.mp3"
+ var source = "./assets/audio/KakaoTalk_Audio_2021-07-18-04-18-44.m4a"
  var audio = document.createElement("audio");
  //
  audio.autoplay = true;
