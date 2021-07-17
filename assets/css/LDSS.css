@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    box-sizing: border-box;
+  }
+
+  html {
+    overflow-y: scroll;
+    height: 100%;
+    overflow-x: hidden !important;
+    -webkit-text-size-adjust: none; }
+  
+  body {
+    background-color: black;
+    -webkit-transition: background-color 300ms ease;
+    -o-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    min-height: 100%;
+    margin: 0; 
+    color: white;
+  }
+
+  ul li {
+    list-style: none;
+    /* display: inline-block; */
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  img {
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .banner {
+      width: 100%;
+  }
+
+  .mainbox{
+    margin: 0% 25%;
+  }
+  
+  .profile{
+      display: flex;
+      justify-content: left;
+      align-items: flex-end;
+  }
+
+  .pagelink:visited { 
+    color: rgb(255,113,34);
+  }
+
+  .img_profile {
+    width:245px;
+  }
+
+  .img_profile > img {
+    width: 237px;
+    height: 296px;
+  }
+
+  .profile_name{
+      color:orange;
+      font-size: 2em;
+  }
+
+  .text_profile {
+    text-align: left;
+    height: max-content;
+
+  }
+
+  .index {
+      /* width:50%; */
+      margin: 10% auto;
+  }
+  
+ h2 {
+     font-size: 2rem;
+     -webkit-text-stroke: 0.7px rgb(255,113,34);
+     -webkit-text-fill-color: black;
+ }
+
+ #rm {
+  font-size: 1.5rem;
+  /* -webkit-text-stroke: 0.6px orange;
+  -webkit-text-fill-color: black; */
+  display: inline-block;
+ }
+
+  p {
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-bottom: 10%;
+  }
+
+  .supermodelImage {
+      width: 100%;
+      display: block;
+      margin-bottom: 10%;
+  }
+
+  #last_supermodelImage {
+      margin-bottom: 0%;
+  }
+
+  #tmi {
+      font-size: 0.6em;
+      color:gray;
+  }
+
+  #tmi1 {
+    font-size: 0.8em;
+    color:gray;
+  }
+
+    #tmi2 {
+      font-size: 0.6em;
+      color:gray;
+    }
+
+  #raphaelInsta{
+    color:white;
+    text-decoration: underline;
+  }
+
+  .stockists:visited {
+    color: rgb(255,113,34);
+    opacity: 0.8;
+  }
+
+  .nomargin{
+    margin-bottom: 0.3em;
+  }
+
+  #rmlink {
+    text-decoration: underline;
+  }
+
+  #rmlink:visited {
+    color: white;
+  }
+
+  .h2Item {
+    margin-bottom: 10%;
+  }
+
+  .stockists {
+    color: white;
+  }
+
+  .stockists:visited {
+    color: white;
+  }
+
+  .stockists:hover {
+    opacity: 0.7;
+  }
+
+  .stfUl > li{
+    list-style: circle;
+    /* list-style-type: color; */
+    color: white;
+    margin-left: 5%;
+  }
+
+  .refUl > li {
+    list-style-type: decimal;
+    color: white;  
+    margin-left: 5%;
+    font-weight: 100;
+  }
+
+.last {
+  margin-bottom: 30%;
+}
+
+  @media (min-width: 1281px) {
+    .mainbox {
+      margin: 0 25%;
+    }
+  }
+  /*
+     ##Device=Laptops, Desktops
+     ##Screen=B/w 1025px to 1280px
+     ##Device=랩탑, 데스크탑
+     ##Screen=1025px에서 1280px 사이
+     */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .mainbox {
+      margin: 0 20%;
+    }
+  }
+  /*
+     ##Device=Tablets, Ipads (portrait),
+     ##Screen=B/w 768px to 1024px
+     ##Device=태블릿, 아이패드(세로),
+     ##Screen=768px에서 1024px 사이
+     */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .mainbox {
+      margin: 0 15%;
+    }
+  }
+  /*
+     ##Device=Tablets, Ipads (landscape)
+     ##Screen=B/w 768px to 1024px
+     ##Device=태블릿, 아이패드(가로)
+     ##Screen=768px에서 1024px 사이
+     */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .mainbox {
+      margin: 0 15%;
+    }
+  }
+  /*
+     ##Device=Low Resolution Tablets, Mobiles (Landscape)
+     ##Screen=B/w 481px to 767px
+     ##Device=저해상도 태블릿, 모바일(가로)
+     ##Screen=481px에서 767px 사이
+     */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .mainbox {
+      margin: 0 10%;
+    }
+  }
+  /*
+     ##Device=Most of the Smartphones Mobiles (Portrait)
+     ##Screen=B/w 320px to 479px
+     ##Device=대부분의 스마트폰 모바일 기기(세로)
+     ##Screen=320px에서 479px 사이
+     */
+  @media (min-width: 200px) and (max-width: 480px) {
+    .mainbox {
+      margin: 0 5%;
+    }
+  }
