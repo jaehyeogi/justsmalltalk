@@ -99,31 +99,23 @@ p {
       }
 
 
-@media (min-width: 570px) and (max-width: 767px) {
-    .menu {
-      font-size: 0.8rem;
-    }
+ @media (min-width: 570px) and (max-width: 767px) {
+        .menu {
+          font-size: 0.8rem;
+        }
+      }
     
-  @media (min-width: 200px) and (max-width: 570px) {
-    .menu {
-      font-size: 0.6rem;
-    }
-
-      nav > ul > li::after {
-    padding-right: 0.5rem; 
-    content: ""
-  }
-
-  nav > ul > li:last-child::after {
-    padding-right: 0rem; 
-    content: "";
-  }
-      
-  }
-
-  /*
-     ##Device=Most of the Smartphones Mobiles (Portrait)
-     ##Screen=B/w 320px to 479px
-     ##Device=대부분의 스마트폰 모바일 기기(세로)
-     ##Screen=320px에서 479px 사이
-     */
+      @media (min-width: 200px) and (max-width: 570px) {
+        .menu {
+          font-size: 0.5rem;
+        }
+        nav > ul > li::after {
+            padding-right: 0.5rem; 
+            content: ""
+          }
+    
+          nav > ul > li:last-child::after {
+            padding-right: 0rem; 
+            content: "";
+          }
+      }
