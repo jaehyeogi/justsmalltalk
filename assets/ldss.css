@@ -228,6 +228,10 @@
   margin-bottom: 30%;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
   @media (min-width: 1281px) {
     .mainbox {
       margin: 0 25%;
