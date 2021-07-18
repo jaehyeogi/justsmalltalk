@@ -364,6 +364,11 @@
     content: "";
    }
       
+  nav ul li {
+      padding-bottom: 0.5rem; 
+      padding-top: 0.2rem; 
+    } 
+      
     .container {
       display: grid;
       grid-template-columns: repeat(1, 100vw);
