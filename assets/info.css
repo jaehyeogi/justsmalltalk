@@ -110,6 +110,11 @@ p {
         .menu {
           font-size: 0.6rem;
         }
+          nav ul li {
+      padding-bottom: 0.5rem; 
+      padding-top: 0.2rem; 
+    }   
+          
         nav > ul > li::after {
             padding-right: 0.5rem; 
             content: ""
