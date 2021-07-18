@@ -1,6 +1,6 @@
 let audio = document.querySelector('audio');
 
-cost play = () => {
+const play = () => {
   audio.play();
 }
 window.addEventListener('load', play);
