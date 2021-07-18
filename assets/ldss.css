@@ -306,6 +306,11 @@
       font-size: 1.5em;
   }
       
+     nav ul li {
+      padding-bottom: 0.5rem; 
+      padding-top: 0.2rem; 
+    }    
+      
     .mainbox {
       margin: 0 5%;
     }
