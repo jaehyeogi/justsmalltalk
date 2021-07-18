@@ -94,6 +94,10 @@
       align-items: flex-end;
   }
 
+  .pagelink {
+    color: rgb(255,113,34);
+  }
+
   .pagelink:visited { 
     color: rgb(255,113,34);
   }
@@ -289,10 +293,15 @@
      ##Screen=320px에서 479px 사이
      */
   @media (min-width: 200px) and (max-width: 570px) {
-          .profile{
+    .profile{
       flex-direction: column;
       align-items: flex-start;
     }
+      
+    .profile_name{
+      font-size: 1.5em;
+  }
+      
     .mainbox {
       margin: 0 5%;
     }
