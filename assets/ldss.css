@@ -246,6 +246,8 @@
 
 #tmi5 {
     margin-bottom: 0;
+    font-size: 0.6em;
+    color:gray;
 }
 
   @media (min-width: 1281px) {
