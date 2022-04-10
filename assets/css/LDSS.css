@@ -21,6 +21,51 @@
     color: white;
   }
 
+  nav {
+    z-index: 20;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background: black;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  nav ul {
+    float:right;
+    padding-right: 1%;
+  }
+
+  nav ul li {
+    display: inline-block;  
+    padding-bottom: 0.6rem; 
+    padding-top: 0.3rem; 
+  }
+
+  nav ul li:first-child { 
+    position:fixed;
+    bottom:0;
+    left:1.5%;
+  }
+
+  nav > ul > li::after {
+    padding-right: 1rem; 
+    content: ""
+  }
+
+  nav > ul > li:last-child::after {
+    padding-right: 0rem; 
+    content: "";
+  }
+
+  nav li a{
+    color: white;
+  }
+
+  nav li a:hover{
+    opacity: 0.7;
+  }
+
   ul li {
     list-style: none;
     /* display: inline-block; */
@@ -49,6 +94,10 @@
       align-items: flex-end;
   }
 
+  .pagelink {
+    color: rgb(255,113,34);
+  }
+
   .pagelink:visited { 
     color: rgb(255,113,34);
   }
@@ -63,14 +112,12 @@
   }
 
   .profile_name{
-      color:orange;
       font-size: 2em;
   }
 
   .text_profile {
     text-align: left;
     height: max-content;
-
   }
 
   .index {
@@ -82,7 +129,16 @@
      font-size: 2rem;
      -webkit-text-stroke: 0.7px rgb(255,113,34);
      -webkit-text-fill-color: black;
+     margin-bottom: 2%;
  }
+
+ h4 {
+  font-size: 1rem;
+  /* -webkit-text-stroke: 0.7px rgb(255,113,34);
+  -webkit-text-fill-color: black; */
+  color: rgb(255, 142, 81);
+  margin-bottom: 1%;
+}
 
  #rm {
   font-size: 1.5rem;
@@ -91,6 +147,10 @@
   display: inline-block;
  }
 
+ #buggin:hover {
+   opacity: 0.6;
+
+ }
   p {
     font-size: 0.8em;
     font-weight: 300;
@@ -100,7 +160,7 @@
   .supermodelImage {
       width: 100%;
       display: block;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
   }
 
   #last_supermodelImage {
@@ -138,6 +198,7 @@
 
   #rmlink {
     text-decoration: underline;
+    color: white;
   }
 
   #rmlink:visited {
@@ -176,6 +237,10 @@
 
 .last {
   margin-bottom: 30%;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
   @media (min-width: 1281px) {
@@ -224,9 +289,16 @@
      ##Device=저해상도 태블릿, 모바일(가로)
      ##Screen=481px에서 767px 사이
      */
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 570px) and (max-width: 767px) {
+    .profile{
+        flex-direction: column;
+        align-items: flex-start;
+      }
     .mainbox {
       margin: 0 10%;
+    }
+    .menu {
+      font-size: 0.8rem;
     }
   }
   /*
@@ -235,8 +307,32 @@
      ##Device=대부분의 스마트폰 모바일 기기(세로)
      ##Screen=320px에서 479px 사이
      */
-  @media (min-width: 200px) and (max-width: 480px) {
+  @media (min-width: 200px) and (max-width: 570px) {
+    .profile{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .profile_name{
+      font-size: 1.5em;
+  }
+
     .mainbox {
       margin: 0 5%;
     }
+
+    .menu {
+      font-size: 0.5rem;
+    }
+
+    nav > ul > li::after {
+        padding-right: 0.5rem; 
+        content: ""
+      }
+
+      nav > ul > li:last-child::after {
+        padding-right: 0rem; 
+        content: "";
+      }
+    
   }
