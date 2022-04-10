@@ -45,7 +45,7 @@
   nav ul li:first-child { 
     position:fixed;
     bottom:0;
-    left:2.5%;
+    left:1.5%;
   }
 
   nav > ul > li::after {
@@ -111,19 +111,13 @@
     height: 296px;
   }
 
+  .profile_name{
+      font-size: 2em;
+  }
 
   .text_profile {
     text-align: left;
     height: max-content;
-  }
-
-
-  .text_profile > li {
-    font size: 0.8rem;
-  }
-
-  .profile_name{
-      font-size: 2em;
   }
 
   .index {
@@ -135,7 +129,16 @@
      font-size: 2rem;
      -webkit-text-stroke: 0.7px rgb(255,113,34);
      -webkit-text-fill-color: black;
+     margin-bottom: 2%;
  }
+
+ h4 {
+  font-size: 1rem;
+  /* -webkit-text-stroke: 0.7px rgb(255,113,34);
+  -webkit-text-fill-color: black; */
+  color: rgb(255, 142, 81);
+  margin-bottom: 1%;
+}
 
  #rm {
   font-size: 1.5rem;
@@ -144,16 +147,20 @@
   display: inline-block;
  }
 
+ #buggin:hover {
+   opacity: 0.6;
+
+ }
   p {
     font-size: 0.8em;
     font-weight: 300;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
   .supermodelImage {
       width: 100%;
       display: block;
-      margin-bottom: 20%;
+      margin-bottom: 5%;
   }
 
   #last_supermodelImage {
@@ -236,20 +243,6 @@
   text-decoration: underline;
 }
 
-.reflink {
-    color:white;
-}
-
-.reflink:visited {
-    color:white;
-}
-
-#tmi5 {
-    margin-bottom: 0;
-    font-size: 0.6em;
-    color:gray;
-}
-
   @media (min-width: 1281px) {
     .mainbox {
       margin: 0 25%;
@@ -297,10 +290,10 @@
      ##Screen=481px에서 767px 사이
      */
   @media (min-width: 570px) and (max-width: 767px) {
-          .profile{
-      flex-direction: column;
-      align-items: flex-start;
-    }
+    .profile{
+        flex-direction: column;
+        align-items: flex-start;
+      }
     .mainbox {
       margin: 0 10%;
     }
@@ -319,22 +312,19 @@
       flex-direction: column;
       align-items: flex-start;
     }
-      
+
     .profile_name{
       font-size: 1.5em;
   }
-      
-     nav ul li {
-      padding-bottom: 0.5rem; 
-      padding-top: 0.2rem; 
-    }    
-      
+
     .mainbox {
       margin: 0 5%;
     }
+
     .menu {
-      font-size: 0.6rem;
+      font-size: 0.5rem;
     }
+
     nav > ul > li::after {
         padding-right: 0.5rem; 
         content: ""
